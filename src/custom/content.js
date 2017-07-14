@@ -9,8 +9,10 @@ var fs = require('fs');
  * into strings of those files' content before the file is delivered to a
  * browser: the content is read ahead-of-time and included in bundle.js.
  */
-module.exports =
-    '# 文档格式说明\n' +
+module.exports =(function(){
+    return '# 文档格式说明\n' +
     fs.readFileSync('./content/introduction.md', 'utf8') + '\n' +
     '# 使用帮助\n' +
     fs.readFileSync('./content/documentation.md', 'utf8') + '\n';
+})()
+    

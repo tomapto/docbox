@@ -1,0 +1,13 @@
+{
+    "name":"docbox",
+    "script":"./start.sh",
+    "error_file":"./docbox.err.log",
+    "out_file":"./docbox.out.log",
+    "instances":"1",
+    "merge_logs":true,
+    "exec_interprter":"bash",
+    "exec_mode":"cluster_mode",
+    "env":{
+        "NODE_ENV":"production"
+    }
+}

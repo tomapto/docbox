@@ -1,3 +1,6 @@
+
+# 文档格式说明
+
 ## docbox系统使用说明
 
 ###  下载运行项目
@@ -30,10 +33,25 @@ module.exports =
 ### 语言类型
 如:
     ```javascript
+支持语言
+
+语言类型|说明|显示范围
+|-:|-:|-:|
+javascript||JavaScript
+bash||CLI
+curl||curl
+python||Python
+java||Java
+objc||objective-c
+swift||Swift
+endpoint|URL请求 值包括 PUT,POST,GET,DELETE,PATCH|所有
+html||所有
+json||所有
+http||所有
 
 
 ### 请求
-    ```endpoint
+    ```
     GET /wobbles/v1/{username} wobbles:read
     ```
 ```endpoint
